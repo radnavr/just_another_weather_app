@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WEATHER_APP_1.0</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5faea5ce03.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="nest">
+      <!--SEARCH-->
+      <div class="input-container row indentation">
+        <input type="text" id="input" class="text-s" />
+        <button id="searchBtn">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+      <!--CURRENT WEATHER-->
+      <div class="row indentation">
+        <div id="currentWeather">
+          <h1 id="location" class="text-l"></h1>
+          <h2 id="region" class="text-m"></h2>
+          <h2 id="country" class="text-m"></h2>
+          <div class="row">
+            <h3 id="temperature" class="text-xl"></h3>
+            <img src="" alt="" id="currentIcon" class="icon-size-l" />
+            <!--<h3 id="condition"></h3>-->
+          </div>
+        </div>
+      </div>
+      <!--FORTHCOMING WEATHER-->
+      <div id="forthcomingWeather" class="indentation">
+        <h2 class="inline-blocked timeC1 text-s"></h2>
+        <h2 class="inline-blocked timeC2 text-s"></h2>
+        <h2 class="inline-blocked timeC3 text-s"></h2>
+        <h2 class="inline-blocked timeC4 text-s"></h2>
+        <h2 class="inline-blocked timeC5 text-s"></h2>
+        <h2 class="inline-blocked timeC6 text-s"></h2>
+        <img src="" alt="" class="iconC1 icon-size-s" />
+        <img src="" alt="" class="iconC2 icon-size-s" />
+        <img src="" alt="" class="iconC3 icon-size-s" />
+        <img src="" alt="" class="iconC4 icon-size-s" />
+        <img src="" alt="" class="iconC5 icon-size-s" />
+        <img src="" alt="" class="iconC6 icon-size-s" />
+        <h3 class="inline-blocked tempC1 text-s"></h3>
+        <h3 class="inline-blocked tempC2 text-s"></h3>
+        <h3 class="inline-blocked tempC3 text-s"></h3>
+        <h3 class="inline-blocked tempC4 text-s"></h3>
+        <h3 class="inline-blocked tempC5 text-s"></h3>
+        <h3 class="inline-blocked tempC6 text-s"></h3>
+      </div>
+      <!--FORTHCOMING DAYS WEATHER-->
+      <div id="forthcomingDaysWeather" class="indentation">
+        <!--tomorrow-->
+        <h2 class="inline-blocked dayR1 text-m" id="tomorrow"></h2>
+        <img
+          src=""
+          alt=""
+          id="tomorrowIcon"
+          class="icon-conditionR1 icon-size-m"
+        />
+        <h3
+          class="min-maxR1 inline-blocked text-m"
+          id="tomorrowTemperatureSpan"
+        ></h3>
+        <!--dividing line-->
+        <div class="dividing-line"></div>
+        <!--after tomorow-->
+        <h2 class="inline-blocked dayR2 text-m" id="afterTomorrow"></h2>
+        <img
+          src=""
+          alt=""
+          id="afterTomorrowIcon"
+          class="icon-conditionR2 icon-size-m"
+        />
+        <h3
+          class="min-maxR2 inline-blocked text-m"
+          id="afterTomorrowTemperatureSpan"
+        ></h3>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+</html>

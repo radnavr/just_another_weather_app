@@ -1,0 +1,292 @@
+/*GENERAL*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: linear-gradient(to bottom, #0083b0, #00b4db);
+    color: white;
+    font-family: Roboto;
+    margin: 0 16px;
+    text-align: center;
+}
+
+/*TYPOGRAPHY*/
+
+.text-s {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 1.2rem 0;
+}
+
+.text-m {
+    font-size: 1.6rem;
+    font-weight: 400;
+    margin: 1.2rem 0;
+}
+
+.text-l {
+    font-size: 3.2rem;
+    font-weight: 300;
+    margin: 1.6rem 0 1.2rem;
+}
+
+.text-xl {
+    font-size: 6.4rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+/*VISUALS*/
+
+i {
+    color: white;
+}
+
+/*inputs*/
+
+#input {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 4px 0 0 4px;
+    border: 0.1rem solid white;
+    box-sizing: border-box;
+    color: white;
+    height: 100%;
+    margin: 0;
+    padding: 0 0 0 .8rem;
+}
+
+#input:focus {
+    outline: none;
+}
+
+#searchBtn {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 0 4px 4px 0;
+    border: 0.1rem solid white;
+    height: 100%;
+}
+
+.input-container {
+    height: 2rem;
+}
+
+/*icons*/
+
+.icon-size-s {
+    width: 3.2rem;
+}
+
+.icon-size-m {
+    width: 6.4rem;
+}
+
+.icon-size-l {
+    width: 12.8rem;
+}
+
+/*LAYOUT*/
+
+/*general layout*/
+
+.nest {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: space-around;
+}
+
+.inline-blocked {
+    display: inline-block;
+}
+
+.column {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.indentation {
+    margin: 16px 0;
+}
+
+/*forthcoming weather grid*/
+
+#forthcomingWeather {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    border: solid 0.1rem white;
+    display: grid;
+    grid-template-areas:    "timeC1 timeC2 timeC3 timeC4 timeC5 timeC6"
+                            "iconC1 iconC2 iconC3 iconC4 iconC5 iconC6"
+                            "tempC1 tempC2 tempC3 tempC4 tempC5 tempC6";
+    justify-content: space-between;
+    padding: 0 1.2rem;
+}
+
+.timeC1 {
+    grid-area: timeC1;
+}
+
+.timeC2 {
+    grid-area: timeC2;
+}
+
+.timeC3 {
+    grid-area: timeC3;
+}
+
+.timeC4 {
+    grid-area: timeC4;
+}
+
+.timeC5 {
+    grid-area: timeC5;
+}
+
+.timeC6 {
+    grid-area: timeC6;
+}
+
+.iconC1 {
+    grid-area: iconC1;
+}
+
+.iconC2 {
+    grid-area: iconC2;
+}
+
+.iconC3 {
+    grid-area: iconC3;
+}
+
+.iconC4 {
+    grid-area: iconC4;
+}
+
+.iconC5 {
+    grid-area: iconC5;
+}
+
+.iconC6 {
+    grid-area: iconC6;
+}
+
+.tempC1 {
+    grid-area: tempC1;
+}
+
+.tempC2 {
+    grid-area: tempC2;
+}
+
+.tempC3 {
+    grid-area: tempC3;
+}
+
+.tempC4 {
+    grid-area: tempC4;
+}
+
+.tempC5 {
+    grid-area: tempC5;
+}
+
+.tempC6 {
+    grid-area: tempC6;
+}
+
+
+/*forthcoming days weather grid*/
+
+#forthcomingDaysWeather {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    border: solid 0.1rem white;
+    display: grid;
+    grid-template-areas:    "dayR1 icon-conditionR1 min-maxR1"
+                            "dividing-line dividing-line dividing-line"
+                            "dayR2 icon-conditionR2 min-maxR2";
+    justify-content: space-between;
+    padding: 0 1.2rem;
+}
+
+.dayR1 {
+    grid-area: dayR1;
+    text-align: left;
+}
+
+.icon-conditionR1 {
+    grid-area: icon-conditionR1;
+}
+
+.min-maxR1 {
+    grid-area: min-maxR1;
+    text-align: right;
+}
+
+.dividing-line {
+    grid-area: dividing-line;
+    height: 0.1rem;
+    background-color: white;
+}
+
+.dayR2 {
+    grid-area: dayR2;
+    text-align: left;
+}
+
+.icon-conditionR2 {
+    grid-area: icon-conditionR2;
+}
+
+.min-maxR2 {
+    grid-area: min-maxR2;
+    text-align: right;
+}
+
+@media (min-width: 541px) {
+    .text-s {
+        font-size: 1rem;
+        margin: 1rem 0;
+    }
+    
+    .text-m {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
+    
+    .text-l {
+        font-size: 2.4rem;
+        font-weight: 300;
+        margin: 1.2rem 0 1.2rem;
+    }
+    
+    .text-xl {
+        font-size: 3.2rem;
+    }
+
+    .icon-size-l {
+        width: 9.6rem;
+    }
+
+    .nest {
+        background-image: linear-gradient(to bottom, #0083b0, #00b4db);
+        padding: 0 16px;
+        width: 33%;
+    }
+
+    body {
+        background-color: rgb(24,24,24);
+        background-image: none;
+        display: flex;
+        justify-content: center;
+    }
+}
